@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: Absolute</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+        .container {
+            position: relative;
+            height: 400px;
+            background-color: lightyellow;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: lightcoral;
+            border: 2px solid red;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position: Absolute</h1>
+    <p>The box is positioned <strong>absolute</strong> within its nearest positioned ancestor (the container), and it's moved 50px down and 100px to the right.</p>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
