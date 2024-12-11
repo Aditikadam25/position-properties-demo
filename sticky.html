@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: Sticky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 1500px;
+            background-color: lightgray;
+        }
+        h1 {
+            background-color: lightseagreen;
+            color: white;
+            padding: 20px;
+        }
+        .box {
+            width: 250px;
+            height: 150px;
+            background-color: lightpink;
+            border: 2px solid pink;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        p {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position: Sticky</h1>
+    <p>The box will stick to the top of the viewport when scrolling down, until its parent element is out of view.</p>
+    <div class="box"></div>
+    <p>Scroll down the page to see the sticky effect in action.</p>
+</body>
+</html>
